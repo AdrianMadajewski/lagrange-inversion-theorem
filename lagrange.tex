@@ -304,21 +304,11 @@
 \end{frame}
 
 % ================================================================
-\begin{frame}{Przykład: $f(z) = a z^{-1}$}
-  Z liniowości
-  \[
-    \oint_{|z| = 1} \frac{a}{z}\, dz = a \oint_{|z| = 1} z^{-1}\, dz = 2\pi i\, a ,
-    \qquad\text{czyli}\qquad
-    \frac{1}{2\pi i} \oint_{|z| = 1} \frac{a}{z}\, dz = a .
-  \]
-  \pause
-  \bigskip
-  Całka odczytuje współczynnik stojący przy $z^{-1}$.
+\begin{frame}{Pomysł}
+  Chcemy odczytać współczynnik przy $z^{k}$. Dzielimy więc przez $z^{k+1}$, aby $z^{k}$ zamieniło się w $z^{-1}$.
   \pause
   \bigskip
 
-  \textbf{Pomysł.} Chcemy odczytać współczynnik przy $z^{k}$. Dzielimy więc przez $z^{k+1}$, aby $z^{k}$ zamieniło się w $z^{-1}$.
-  \pause
   Na przykład dla $f(z) = 3 + 5z + 7z^{2}$ i $k = 1$
   \[
     \frac{f(z)}{z^{2}} = 3 z^{-2} + 5 z^{-1} + 7 ,
