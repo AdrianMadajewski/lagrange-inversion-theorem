@@ -34,7 +34,6 @@ Lokalnie:
 
 ```bash
 pdflatex lagrange.tex
-pdflatex lagrange.tex
 ```
 
 Wymagane pakiety (są w pełnej dystrybucji TeX Live / MiKTeX): `beamer`, `babel` (polish), `lmodern`, `mathtools`, `pgfplots`, `qrcode`. Plik `tlo.png` musi leżeć obok `lagrange.tex`.
