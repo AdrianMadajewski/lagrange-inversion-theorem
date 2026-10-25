@@ -387,7 +387,7 @@
 
 % ================================================================
 \begin{frame}{Funkcja $\varphi$}
-  \wzoran{a_n = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
+  \wzoran{a_n = \frac{1}{2\pi i} \oint_{f(C)} \frac{x(y)}{y^{n+1}}\, dy = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
   Ponieważ $f(x) = x \cdot \bigl(f'(0) + c_2 x + c_3 x^{2} + \dots\bigr)$, funkcja
   \[
     \varphi(x) \coloneqq \frac{x}{f(x)}, \qquad \varphi(0) \coloneqq \frac{1}{f'(0)},
@@ -407,7 +407,7 @@
 
 % ================================================================
 \begin{frame}{Upraszczamy}
-  \wzoran{a_n = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
+  \wzoran{a_n = \frac{1}{2\pi i} \oint_{f(C)} \frac{x(y)}{y^{n+1}}\, dy = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
   Pod całką mamy $\dfrac{x\, f'(x)}{f(x)^{n+1}}\, dx = \dfrac{x}{y^{n+1}}\, dy$, gdzie $y = \dfrac{x}{\varphi(x)}$. Zatem
   \[
     \frac{x}{y^{n+1}}\, dy
