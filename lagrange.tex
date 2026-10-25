@@ -376,33 +376,32 @@
 \end{frame}
 
 % ================================================================
-\begin{frame}{Funkcja $\varphi$}
-  \wzoran{a_n = \frac{1}{2\pi i} \oint_{f(C)} \frac{x(y)}{y^{n+1}}\, dy = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
-  Ponieważ $f(x) = x \cdot \bigl(f'(0) + c_2 x + c_3 x^{2} + \dots\bigr)$, funkcja
+\begin{frame}[t]{Funkcja $\varphi$}
+  \wzoran{a_n = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
+  Załóżmy, że
   \[
-    \varphi(x) \coloneqq \frac{x}{f(x)}, \qquad \varphi(0) \coloneqq \frac{1}{f'(0)},
+    f(x) = \frac{x}{\varphi(x)}
   \]
-  jest analityczna w otoczeniu $0$ i $\varphi(0) \neq 0$. Równanie $y = f(x)$ przyjmuje postać
-  \[
-    y = \frac{x}{\varphi(x)} .
-  \]
+  dla pewnej funkcji $\varphi$ analitycznej w otoczeniu $0$, takiej że $\varphi(0) \neq 0$.
   \pause
+  \medskip
+
   Wtedy
   \[
-    dy = \left( \frac{x}{\varphi(x)} \right)' dx = \frac{\varphi(x) - x\, \varphi'(x)}{\varphi(x)^{2}}\, dx ,
+    f'(x) = \frac{\varphi(x) - x\, \varphi'(x)}{\varphi(x)^{2}},
     \qquad
-    \frac{x}{y^{n+1}} = \frac{x\, \varphi(x)^{n+1}}{x^{n+1}} = \frac{\varphi(x)^{n+1}}{x^{n}} .
+    f(x)^{n+1} = \frac{x^{n+1}}{\varphi(x)^{n+1}} .
   \]
 \end{frame}
 
 % ================================================================
 \begin{frame}{Upraszczamy}
-  \wzoran{a_n = \frac{1}{2\pi i} \oint_{f(C)} \frac{x(y)}{y^{n+1}}\, dy = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
-  Pod całką mamy $\dfrac{x\, f'(x)}{f(x)^{n+1}}\, dx = \dfrac{x}{y^{n+1}}\, dy$, gdzie $y = \dfrac{x}{\varphi(x)}$. Zatem
+  \wzoran{a_n = \frac{1}{2\pi i} \oint_{C} \frac{x\, f'(x)}{f(x)^{n+1}}\, dx}
+  Wstawiamy do funkcji podcałkowej
   \[
-    \frac{x}{y^{n+1}}\, dy
-    = \frac{\varphi(x)^{n+1}}{x^{n}} \cdot \frac{\varphi(x) - x\, \varphi'(x)}{\varphi(x)^{2}}\, dx
-    = \frac{\varphi(x)^{n-1} \bigl(\varphi(x) - x\, \varphi'(x)\bigr)}{x^{n}}\, dx .
+    \frac{x\, f'(x)}{f(x)^{n+1}}
+    = x \cdot \frac{\varphi(x) - x\, \varphi'(x)}{\varphi(x)^{2}} \cdot \frac{\varphi(x)^{n+1}}{x^{n+1}}
+    = \frac{\varphi(x)^{n-1} \bigl(\varphi(x) - x\, \varphi'(x)\bigr)}{x^{n}} .
   \]
   \pause
   Rozbijamy na dwa składniki
