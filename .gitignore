@@ -1,0 +1,14 @@
+# Pliki pomocnicze LaTeX-a
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# PDF jest budowany automatycznie przez GitHub Actions
+*.pdf
